@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/TeamListFragment"
-        android:name="com.uasmobile.player_nba.ui.team.FragmentListTeam"
+        android:name="com.uasmobile."
         android:label="TeamListFragment" >
         <action
             android:id="@+id/action_teamListFragment_to_teamDetailFragment"
