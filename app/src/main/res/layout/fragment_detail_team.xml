@@ -19,9 +19,53 @@
             android:layout_height="wrap_content"
             android:textAppearance="?attr/textAppearanceHeadline5"
             android:padding="8dp"
-            android:text="@{viewModel.detail.name}"
+            android:text="@{viewModel.detail.full_name}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
+        <TextView
+            android:id="@+id/namasingkatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.name}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nama"/>
+        <TextView
+            android:id="@+id/abrevication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.abbreviation}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/namasingkatan"/>
+        <TextView
+            android:id="@+id/divisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.division}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/city"/>
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.city}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/abrevication"/>
+        <TextView
+            android:id="@+id/confrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.conference}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divisi"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
