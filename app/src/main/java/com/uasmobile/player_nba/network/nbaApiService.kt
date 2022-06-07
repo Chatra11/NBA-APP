@@ -18,6 +18,7 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
+
 interface NbaServiceApi{
     @GET("teams")
     suspend fun getData(): Team
