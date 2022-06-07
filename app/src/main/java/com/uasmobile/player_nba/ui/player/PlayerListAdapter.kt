@@ -26,7 +26,7 @@ class PlayerListAdapter (private val clickListener: PlayerListener):
             return oldItem.first_name == newItem.first_name
         }
         override fun areItemsTheSame(oldItem: Player.Data, newItem: Player.Data): Boolean {
-            return oldItem.last_name == newItem.last_name
+            return oldItem.first_name == newItem.first_name
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlayerViewHolder {
@@ -37,8 +37,8 @@ class PlayerListAdapter (private val clickListener: PlayerListener):
     }
 
     override fun onBindViewHolder(holder: PlayerViewHolder, position: Int) {
-        val team = getItem(position)
-        holder.bind(clickListener,team)
+        val player = getItem(position)
+        holder.bind(clickListener,player)
     }
 
 }

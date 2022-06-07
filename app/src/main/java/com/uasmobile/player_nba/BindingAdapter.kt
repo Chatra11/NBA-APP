@@ -14,7 +14,7 @@ fun bindRecylerView(recyclerView: RecyclerView,data:List<Team.Data>?){
     adapter.submitList(data)
 }
 @BindingAdapter("ListPlayer")
-fun bindRecyclerView(recyclerView: RecyclerView,Data:List<Player.Data>){
+fun bindRecyclerView(recyclerView: RecyclerView,Data:List<Player.Data>?){
     val adapter = recyclerView.adapter as PlayerListAdapter
     adapter.submitList(Data)
 }

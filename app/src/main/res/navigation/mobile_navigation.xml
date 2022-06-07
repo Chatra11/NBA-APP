@@ -32,5 +32,18 @@
         android:id="@+id/nav_player"
         android:name="com.uasmobile.player_nba.ui.player.FragmentListPlayer"
         android:label="Player"
-        tools:layout="@layout/fragment_list_player" />
+        tools:layout="@layout/fragment_list_player" >
+        <action
+            android:id="@+id/action_PlayerListFragment_to_PlayerDetailFragment"
+            app:destination="@id/PlayerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlayerDetailFragment"
+        android:name="com.uasmobile.player_nba.ui.player.FragmentDetailPlayer"
+        android:label="PlayerDetailFragment" >
+        <action
+            android:id="@+id/action_PlayerDetailFragment_to_PlayerListFragment"
+            app:destination="@id/nav_player" />
+    </fragment>
+
 </navigation>

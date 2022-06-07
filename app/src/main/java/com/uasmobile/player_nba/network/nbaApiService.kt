@@ -34,12 +34,12 @@ private val retrofit2 = Retrofit.Builder()
     .build()
 
 interface PlayerServiceApi {
-    @GET("player")
+    @GET("players/?search=davis")
     suspend fun getData(): Player
 }
 object PlayerApi {
     val retrofitServiceApi: PlayerServiceApi by lazy {
-        retrofit.create(PlayerServiceApi::class.java)
+        retrofit2.create(PlayerServiceApi::class.java)
     }
 }
 

@@ -5,10 +5,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.uasmobile.player_nba.network.NbaApi
 import com.uasmobile.player_nba.network.Player
 import com.uasmobile.player_nba.network.PlayerApi
-import com.uasmobile.player_nba.network.PlayerServiceApi
 import kotlinx.coroutines.launch
 
 class MyViewModel2  : ViewModel(){
