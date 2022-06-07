@@ -8,7 +8,7 @@
             type="com.uasmobile.player_nba.network.Player.Data" />
         <variable
             name="clickListener"
-            type="com.uasmobile.player_nba.ui.PlayerListener" />
+            type="com.uasmobile.player_nba.ui.player.PlayerListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
