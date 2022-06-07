@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/PlayerListFragment">
+
+    <fragment
+        android:id="@+id/PlayerListFragment"
+        android:name="com.uasmobile."
+        android:label="PlayerListFragment" >
+        <action
+            android:id="@+id/action_PlayerListFragment_to_PlayerDetailFragment"
+            app:destination="@id/PlayerDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlayerDetailFragment"
+        android:name="com.uasmobile.player_nba.ui.player.FragmentDetailPlayer"
+        android:label="PlayerDetailFragment" >
+        <action
+            android:id="@+id/action_PlayerDetailFragment_to_PlayerListFragment"
+            app:destination="@id/PlayerListFragment" />
+    </fragment>
+</navigation>
