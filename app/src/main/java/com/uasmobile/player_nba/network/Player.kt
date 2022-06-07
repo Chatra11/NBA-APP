@@ -16,10 +16,6 @@ data class Player(
         val height_inches:Int? = null,
         @Json(name = "last_name")
         val last_name:String,
-        val position:String,
-        val team: List<Team.Data>,
-        @Json(name = "height_inches")
-        val weight_pounds:Int? = null,
-
+        val position:String
     )
 }

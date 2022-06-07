@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:textAppearance="?attr/textAppearanceHeadline5"
             android:padding="8dp"
-            android:text="@{viewModel.detail.first_name}"
+            android:text="@{viewModel.detail.last_name}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
