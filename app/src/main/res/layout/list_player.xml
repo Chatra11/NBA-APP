@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        app:cardBackgroundColor="#E85D5D"
         android:onClick="@{() -> clickListener.onClick(player)}"
         app:cardElevation="4dp"
         app:cardCornerRadius="4dp">
@@ -24,6 +25,7 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:ellipsize="end"
             android:maxLines="1"
             android:padding="8dp"

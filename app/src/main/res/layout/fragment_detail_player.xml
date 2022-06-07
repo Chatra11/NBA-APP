@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
@@ -11,25 +12,53 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="171dp"
+                android:src="@drawable/detailplayer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="126dp" />
 
         <TextView
             android:id="@+id/nama2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginTop="192dp"
+            android:fontFamily="@font/mb2"
             android:padding="8dp"
             android:text="@{viewModel.detail.first_name}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/mb2"
             android:padding="8dp"
             android:text="@{viewModel.detail.last_name}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nama2" />
+
+        <TextView
+            android:id="@+id/nama3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:fontFamily="@font/mm1"
+            android:padding="8dp"
+            android:text="@{viewModel.detail.position}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nama2" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

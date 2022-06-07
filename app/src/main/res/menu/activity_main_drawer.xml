@@ -14,7 +14,7 @@
             android:title="@string/menu_Team" />
         <item
             android:id="@+id/nav_player"
-            android:icon="@drawable/ic_ikon_team"
-            android:title="@string/app_name" />
+            android:icon="@drawable/ic_baseline_accessibility_new_24"
+            android:title="@string/menu_Player" />
     </group>
 </menu>

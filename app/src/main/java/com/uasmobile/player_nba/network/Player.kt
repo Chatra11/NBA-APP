@@ -10,12 +10,9 @@ data class Player(
         val id :Int,
         @Json(name = "first_name")
         val first_name:String,
-        @Json(name = "height_feet")
-        val height_feet:Int? = null,
-        @Json(name = "height_inches")
-        val height_inches:Int? = null,
         @Json(name = "last_name")
         val last_name:String,
+        @Json(name = "position")
         val position:String
     )
 }

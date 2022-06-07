@@ -17,10 +17,14 @@
         <entry key="..\:/Player_Nba/app/src/main/res/layout/list_team.xml" value="0.22" />
         <entry key="..\:/Player_Nba/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Player_Nba/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/font/caladea_bold.xml" value="0.1388888888888889" />
+        <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/font/roboto_condensed_bold.xml" value="0.1388888888888889" />
         <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/layout/fragment_detail_player.xml" value="0.1" />
+        <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/layout/fragment_detail_team.xml" value="0.1802536231884058" />
         <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/layout/fragment_list_player.xml" value="0.25416666666666665" />
         <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/layout/fragment_list_team.xml" value="0.25416666666666665" />
+        <entry key="..\:/UAS MOBILE/NBA-APP/app/src/main/res/mipmap-anydpi-v26/ic_icon.xml" value="0.1" />
       </map>
     </option>
   </component>
