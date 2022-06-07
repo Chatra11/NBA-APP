@@ -34,7 +34,7 @@ private val retrofit2 = Retrofit.Builder()
     .build()
 
 interface PlayerServiceApi {
-    @GET("players/?search=davis")
+    @GET("players")
     suspend fun getData(): Player
 }
 object PlayerApi {
