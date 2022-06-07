@@ -23,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/foto"
-                android:layout_width="403dp"
-                android:layout_height="178dp"
+                android:layout_width="match_parent"
+                android:layout_height="171dp"
                 android:src="@drawable/detail"
                 app:layout_constraintTop_toTopOf="@id/nama" />
         </com.google.android.material.card.MaterialCardView>
@@ -33,55 +33,85 @@
             android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp"
             android:padding="8dp"
             android:text="@{viewModel.detail.full_name}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card" />
+            app:layout_constraintTop_toBottomOf="@id/abrevication"
+            tools:text="Nama Team NBA" />
+
         <TextView
             android:id="@+id/namasingkatan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
             android:padding="8dp"
+            android:layout_marginTop="10dp"
             android:text="@{viewModel.detail.name}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nama"/>
+            app:layout_constraintTop_toBottomOf="@id/nama"
+            tools:text="Nama singkatan Nba" />
+
         <TextView
             android:id="@+id/abrevication"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
             android:padding="8dp"
             android:text="@{viewModel.detail.abbreviation}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/namasingkatan"/>
+            app:layout_constraintTop_toBottomOf="@id/card"
+            tools:text="Nama abrication" />
+
         <TextView
             android:id="@+id/divisi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
             android:padding="8dp"
             android:text="@{viewModel.detail.division}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/city"/>
+            app:layout_constraintTop_toBottomOf="@id/city"
+            tools:text="Divisi" />
+
         <TextView
             android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
             android:padding="8dp"
+            android:layout_marginTop="10dp"
             android:text="@{viewModel.detail.city}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/abrevication"/>
+            app:layout_constraintTop_toBottomOf="@id/namasingkatan"
+            tools:text="city" />
+
         <TextView
             android:id="@+id/confrence"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:fontFamily="@font/caladea_bold"
+            android:gravity="center"
             android:padding="8dp"
+            android:layout_marginTop="10dp"
             android:text="@{viewModel.detail.conference}"
+            android:textAppearance="?attr/textAppearanceHeadline5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/divisi"/>
+            app:layout_constraintTop_toBottomOf="@id/divisi"
+            tools:text="confrence" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
