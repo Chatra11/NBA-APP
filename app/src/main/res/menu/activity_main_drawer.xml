@@ -13,10 +13,6 @@
             android:icon="@drawable/ic_ikon_team"
             android:title="@string/menu_Team" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
             android:id="@+id/nav_player"
             android:icon="@drawable/ic_ikon_team"
             android:title="@string/app_name" />
