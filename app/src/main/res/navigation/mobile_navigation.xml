@@ -14,17 +14,23 @@
     <fragment
         android:id="@+id/nav_team"
         android:name="com.uasmobile.player_nba.ui.team.FragmentListTeam"
-        android:label="menu_Team"
-        tools:layout="@layout/fragment_list_team" />
-
+        android:label="Daftar Team Nba"
+        tools:layout="@layout/fragment_list_team" >
+        <action
+            android:id="@+id/action_teamListFragment_to_teamDetailFragment"
+            app:destination="@id/TeamDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TeamDetailFragment"
+        android:name="com.uasmobile.player_nba.ui.team.FragmentDetailTeam"
+        android:label="Detail Team" >
+        <action
+            android:id="@+id/action_TeamDetailFragment_to_TeamListFragment"
+            app:destination="@id/nav_team" />
+    </fragment>
     <fragment
         android:id="@+id/nav_player"
         android:name="com.uasmobile.player_nba.ui.player.FragmentListPlayer"
-        android:label="menu_Player"
+        android:label="Player"
         tools:layout="@layout/fragment_list_player" />
-<!--    <fragment-->
-<!--        android:id="@+id/nav_slideshow"-->
-<!--        android:name="com.uasmobile.player_nba.ui.slideshow.SlideshowFragment"-->
-<!--        android:label="@string/menu_slideshow"-->
-<!--        tools:layout="@layout/fragment_slideshow" />-->
 </navigation>
